@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fbb1451-9a54-45c2-962b-0063d7f31a7b" name="Changes" comment="mais configurações relacionadas ao config server">
-      <change afterPath="$PROJECT_DIR$/../hr-api-gateway-zuul/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/src/main/java/com/devsuperior/hrapigetewayzull/HrApiGetewayZullApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-geteway-zull/src/test/java/com/devsuperior/hrapigetewayzull/HrApiGetewayZullApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-config-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-payroll/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="7fbb1451-9a54-45c2-962b-0063d7f31a7b" name="Changes" comment="correção do projeto gatewayzuul">
+      <change afterPath="$PROJECT_DIR$/../hr-user/src/main/java/com/devsuperior/hruser/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hr-user/src/main/java/com/devsuperior/hruser/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,7 +61,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hr-api-gateway-zuul/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hr-eureka-server" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -79,6 +70,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../hr-user/src/main/resources" />
       <recent name="$PROJECT_DIR$/../hr-api-gateway-zuul/src/main/resources" />
       <recent name="$PROJECT_DIR$/../hr-eureka-server/src/main/resources" />
       <recent name="$PROJECT_DIR$/../hr-payroll/src/main/resources" />
@@ -87,27 +79,23 @@
       <recent name="com.devsuperior.hrpayroll.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.hr-payroll">
+  <component name="RunManager" selected="Application.hr-api-gateway-zuul">
     <configuration name="hr-api-gateway-zuul" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.devsuperior.hrapigatewayzuul.HrApiGatewayZuulApplication" />
       <module name="hr-api-gateway-zuul" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hr-api-gateway-zuul" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hr-config-server" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" temporary="true">
+    <configuration name="hr-config-server" type="Application" factoryName="Application">
       <envs>
         <env name="GITHUB_USER" value="walacetalesfs" />
         <env name="GITHUB_PASS" value="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" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.devsuperior.hrconfigserver.HrConfigServerApplication" />
       <module name="hr-config-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devsuperior.hrconfigserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hr-config-server" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,6 +103,7 @@
     <configuration name="hr-eureka-server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.devsuperior.hreurekaserver.HrEurekaServerApplication" />
       <module name="hr-eureka-server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hr-eureka-server" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,13 +111,15 @@
     <configuration name="hr-payroll" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.devsuperior.hrpayroll.HrPayrollApplication" />
       <module name="hr-payroll" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hr-payroll" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hr-worker (1)" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.devsuperior.hrworker.HrWorkerApplication" />
-      <module name="hr-worker" />
+    <configuration name="hr-user" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.devsuperior.hruser.HrUserApplication" />
+      <module name="hr-user" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hr-user" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,10 +133,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.hr-worker" />
-      <item itemvalue="Application.hr-api-gateway-zuul" />
-      <item itemvalue="Application.hr-worker (1)" />
-      <item itemvalue="Application.hr-payroll" />
       <item itemvalue="Application.hr-eureka-server" />
+      <item itemvalue="Application.hr-api-gateway-zuul" />
+      <item itemvalue="Application.hr-payroll" />
+      <item itemvalue="Application.hr-user" />
       <item itemvalue="Application.hr-config-server" />
     </list>
     <recent_temporary>
@@ -247,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637642051023</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="configurando projetos">
+      <created>1637714823326</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1637714823326</updated>
+    </task>
+    <task id="LOCAL-00014" summary="correção do projeto gatewayzuul">
+      <created>1637714851689</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1637714851689</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -282,6 +287,8 @@
     <MESSAGE value="setando timeout dos projetos" />
     <MESSAGE value="configurando config server e client para projeto worker" />
     <MESSAGE value="mais configurações relacionadas ao config server" />
-    <option name="LAST_COMMIT_MESSAGE" value="mais configurações relacionadas ao config server" />
+    <MESSAGE value="configurando projetos" />
+    <MESSAGE value="correção do projeto gatewayzuul" />
+    <option name="LAST_COMMIT_MESSAGE" value="correção do projeto gatewayzuul" />
   </component>
 </project>
