@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fbb1451-9a54-45c2-962b-0063d7f31a7b" name="Changes" comment="correção do projeto gatewayzuul">
-      <change afterPath="$PROJECT_DIR$/../hr-api-gateway-zuul/src/main/java/com/devsuperior/hrapigatewayzuul/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr-oauth/src/main/java/com/devsuperior/hroauth/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr-oauth/src/main/java/com/devsuperior/hroauth/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr-oauth/src/main/java/com/devsuperior/hroauth/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr-oauth/src/main/java/com/devsuperior/hroauth/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr-oauth/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-api-gateway-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-api-gateway-zuul/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hr-api-gateway-zuul/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-api-gateway-zuul/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-user/src/main/java/com/devsuperior/hruser/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-user/src/main/java/com/devsuperior/hruser/resources/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-eureka-server/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-eureka-server/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-oauth/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-oauth/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-payroll/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-payroll/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-user/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-user/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-user/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +45,8 @@
         <entry key="JPA Inspector" value="true" />
         <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
@@ -58,6 +54,8 @@
         <entry key="JPA Inspector" value="false" />
         <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -91,7 +89,7 @@
       <recent name="com.devsuperior.hrpayroll.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.hr-worker">
+  <component name="RunManager" selected="Application.hr-api-gateway-zuul">
     <configuration name="hr-api-gateway-zuul" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.devsuperior.hrapigatewayzuul.HrApiGatewayZuulApplication" />
       <module name="hr-api-gateway-zuul" />
