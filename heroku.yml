@@ -1,4 +1,3 @@
-version: '3.4'
 services:
     hr-config-server:
         environment:
@@ -72,10 +71,6 @@ services:
                 condition: service_healthy
             hr-eureka-server: 
                 condition: service_healthy
-networks:
-    default:
-        name: hr-net
-        driver: bridge
 #    hr-worker:
 #        image: hr-config-server:v1
 #        build: 
