@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fbb1451-9a54-45c2-962b-0063d7f31a7b" name="Changes" comment="correção do projeto gatewayzuul">
-      <change beforePath="$PROJECT_DIR$/../hr-api-gateway-zuul/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-api-gateway-zuul/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-eureka-server/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-eureka-server/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-oauth/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-oauth/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-payroll/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-payroll/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-user/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-user/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-user/src/main/resources/bootstrap.properties" afterDir="false" />
+    <list default="true" id="7fbb1451-9a54-45c2-962b-0063d7f31a7b" name="Changes" comment="create tables">
+      <change beforePath="$PROJECT_DIR$/../hr-config-server/src/main/java/com/devsuperior/hrconfigserver/HrConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-config-server/src/main/java/com/devsuperior/hrconfigserver/HrConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-eureka-server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-eureka-server/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr-eureka-server/src/main/java/com/devsuperior/hreurekaserver/HrEurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-eureka-server/src/main/java/com/devsuperior/hreurekaserver/HrEurekaServerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
         <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -69,12 +65,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hr-oauth/src/main/java/com/devsuperior/hroauth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hr-payroll/Dockerfile" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -89,7 +85,7 @@
       <recent name="com.devsuperior.hrpayroll.entities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.hr-api-gateway-zuul">
+  <component name="RunManager" selected="Docker.hr-eureka-server">
     <configuration name="hr-api-gateway-zuul" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.devsuperior.hrapigatewayzuul.HrApiGatewayZuulApplication" />
       <module name="hr-api-gateway-zuul" />
@@ -101,7 +97,7 @@
     <configuration name="hr-config-server" type="Application" factoryName="Application">
       <envs>
         <env name="GITHUB_USER" value="walacetalesfs" />
-        <env name="GITHUB_PASS" value="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" />
+        <env name="GITHUB_PASS" value="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" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.devsuperior.hrconfigserver.HrConfigServerApplication" />
       <module name="hr-config-server" />
@@ -149,18 +145,101 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="hr-config-server" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="hr-config-server:v1" />
+          <option name="buildOnly" value="true" />
+          <option name="containerName" value="hr-config-server" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="GITHUB_USER" />
+                <option name="value" value="walacetalesfs" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="GITHUB_PASS" />
+                <option name="value" value="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" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8888" />
+                <option name="hostPort" value="8888" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network bridge" />
+          <option name="sourceFilePath" value="../hr-config-server/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="hr-eureka-server" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="hr-eureka-server:v1" />
+          <option name="buildOnly" value="true" />
+          <option name="containerName" value="hr-eureka-server" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8761" />
+                <option name="hostPort" value="8761" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network bridge" />
+          <option name="sourceFilePath" value="../hr-eureka-server/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="hr-payroll" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="hr-payroll:v1" />
+          <option name="containerName" value="" />
+          <option name="publishAllPorts" value="true" />
+          <option name="commandLineOptions" value="--network hr-net" />
+          <option name="sourceFilePath" value="../hr-payroll/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="hr-worker" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="hr-worker:v1" />
+          <option name="containerName" value="" />
+          <option name="publishAllPorts" value="true" />
+          <option name="commandLineOptions" value="--network hr-net" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.hr-worker" />
-      <item itemvalue="Application.hr-eureka-server" />
       <item itemvalue="Application.hr-api-gateway-zuul" />
+      <item itemvalue="Application.hr-config-server" />
+      <item itemvalue="Application.hr-eureka-server" />
+      <item itemvalue="Application.hr-oauth" />
       <item itemvalue="Application.hr-payroll" />
       <item itemvalue="Application.hr-user" />
-      <item itemvalue="Application.hr-oauth" />
-      <item itemvalue="Application.hr-config-server" />
+      <item itemvalue="Application.hr-worker" />
+      <item itemvalue="Docker.hr-payroll" />
+      <item itemvalue="Docker.hr-worker" />
+      <item itemvalue="Docker.hr-config-server" />
+      <item itemvalue="Docker.hr-eureka-server" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.hr-config-server" />
+        <item itemvalue="Docker.hr-eureka-server" />
+        <item itemvalue="Docker.hr-config-server" />
+        <item itemvalue="Docker.hr-payroll" />
+        <item itemvalue="Docker.hr-worker" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +350,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637714851689</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="containner references">
+      <created>1638838138115</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638838138115</updated>
+    </task>
+    <task id="LOCAL-00016" summary="create tables">
+      <created>1638838154310</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638838154310</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -308,6 +401,8 @@
     <MESSAGE value="mais configurações relacionadas ao config server" />
     <MESSAGE value="configurando projetos" />
     <MESSAGE value="correção do projeto gatewayzuul" />
-    <option name="LAST_COMMIT_MESSAGE" value="correção do projeto gatewayzuul" />
+    <MESSAGE value="containner references" />
+    <MESSAGE value="create tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="create tables" />
   </component>
 </project>
