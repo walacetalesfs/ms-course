@@ -25,3 +25,10 @@ jobs:
     - name: Build with Maven
       working-directory: ./hr-worker
       run: mvn -B package -DskipTests
+    - name: Push to Docker Hub
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_KEY }}
+        repository: walacetalesfs/hr-worker
+        tags: latest, ${{ github.run_number }}
