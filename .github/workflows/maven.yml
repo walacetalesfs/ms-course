@@ -24,7 +24,12 @@ jobs:
         cache: maven
     - name: Build with Maven
       working-directory: ./hr-worker
-      run: mvn -B package -DskipTests | docker build -t hr-worker:$(date +%s) .
+      run: |
+          mvn -B package -DskipTests
+          docker build -t hr-worker:$(date +%s) .
+          pwd
+          ls -ld .
+          ls -l
     - name: Push to Docker Hub
       uses: docker/build-push-action@v1
       with:
