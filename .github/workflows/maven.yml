@@ -26,6 +26,8 @@ jobs:
       working-directory: ./hr-worker
       run: |
           mvn -B package -DskipTests
+          pwd
+          ls
     - name: Login to DockerHub
       uses: docker/login-action@v1 
       with:
