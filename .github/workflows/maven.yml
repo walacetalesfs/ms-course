@@ -26,6 +26,7 @@ jobs:
       working-directory: ./hr-worker
       run: |
           mvn -B package -DskipTests
+          cd target
           pwd
           ls
     - name: Login to DockerHub
