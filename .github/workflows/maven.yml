@@ -34,6 +34,5 @@ jobs:
       run: |
         cd hr-worker
         docker build -t hr-worker:v1 .
-        docker images
         docker tag hr-worker:v1 walacetalesfs/hr-worker:latest
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-worker
