@@ -32,6 +32,8 @@ jobs:
         password: ${{ secrets.DOCKERHUB_KEY }}
     - name: Build and Push docker image
       run: |
+        docker tag hr-worker:v1 walacetalesfs/hr-worker:latest
+        docker images
         cd hr-worker
         docker build -t hr-worker:v1 .
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-worker
