@@ -30,9 +30,8 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_KEY }}
-    - name: build e push docker image
+    - name: Build and Push docker image
       run: |
-        pwd
-        ls
+        cd hr-worker
         docker build -t hr-worker:v1 .
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-worker
