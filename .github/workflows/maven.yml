@@ -74,9 +74,9 @@ jobs:
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-user
 
         cd ../hr-payroll
-        docker build -t hr-worker:v1 .
-        docker tag hr-worker:v1 walacetalesfs/hr-worker:latest
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-worker
+        docker build -t hr-payroll:v1 .
+        docker tag hr-worker:v1 walacetalesfs/hr-payroll:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-payroll
 
         cd ../hr-oauth
         docker build -t hr-oauth:v1 .
