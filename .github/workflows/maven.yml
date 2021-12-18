@@ -26,18 +26,18 @@ jobs:
       run: |
         cd hr-config-server
         mvn -B clean package
-        cd ../hr-eureka-server
-        mvn -B clean package
+        #cd ../hr-eureka-server
+        #mvn -B clean package
         cd ../hr-worker
         mvn -B clean package -DskipTests
-        cd ../hr-user
-        mvn -B clean package -DskipTests
-        cd ../hr-payroll
-        mvn -B clean package -DskipTests
-        cd ../hr-oauth
-        mvn -B clean package -DskipTests
-        cd ../hr-api-getway-zuul
-        mvn -B clean package -DskipTests
+        #cd ../hr-user
+        #mvn -B clean package -DskipTests
+        #cd ../hr-payroll
+        #mvn -B clean package -DskipTests
+        #cd ../hr-oauth
+        #mvn -B clean package -DskipTests
+        #cd ../hr-api-getway-zuul
+        #mvn -B clean package -DskipTests
 
     - name: Login to DockerHub
       uses: docker/login-action@v1 
