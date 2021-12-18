@@ -26,8 +26,8 @@ jobs:
       run: |
         cd hr-config-server
         mvn -B clean package
-        #cd ../hr-eureka-server
-        #mvn -B clean package
+        cd ../hr-eureka-server
+        mvn -B clean package
         cd ../hr-worker
         mvn -B clean package -DskipTests
         cd ../hr-user
