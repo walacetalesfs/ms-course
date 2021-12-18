@@ -26,16 +26,22 @@ jobs:
       run: |
         cd hr-config-server
         mvn -B clean package
+        
         cd ../hr-eureka-server
         mvn -B clean package
+        
         cd ../hr-worker
         mvn -B clean package -DskipTests
+        
         cd ../hr-user
         mvn -B clean package -DskipTests
+        
         cd ../hr-payroll
         mvn -B clean package -DskipTests
+        
         cd ../hr-oauth
         mvn -B clean package -DskipTests
+        
         cd ../hr-api-gateway-zuul
         mvn -B clean package -DskipTests
 
@@ -45,9 +51,39 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_KEY }}
     
-    - name: Build and Push docker image
+    - name: Build and Push Docker Images
       run: |
-        cd hr-worker
+        cd hr-config-server
+        docker build -t hr-config-server:v1 .
+        docker tag hr-config-server:v1 walacetalesfs/hr-config-server:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-config-server
+
+        cd ../hr-eureka-server
+        docker build -t hr-eureka-server:v1 .
+        docker tag hr-eureka-server:v1 walacetalesfs/hr-eureka-server:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-eureka-server
+
+        cd ../hr-worker
         docker build -t hr-worker:v1 .
         docker tag hr-worker:v1 walacetalesfs/hr-worker:latest
         docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-worker
+
+        cd ../hr-user
+        docker build -t hr-user:v1 .
+        docker tag hr-user:v1 walacetalesfs/hr-user:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-user
+
+        cd ../hr-payroll
+        docker build -t hr-worker:v1 .
+        docker tag hr-worker:v1 walacetalesfs/hr-worker:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-worker
+
+        cd ../hr-oauth
+        docker build -t hr-oauth:v1 .
+        docker tag hr-oauth:v1 walacetalesfs/hr-oauth:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-oauth
+
+        cd ../hr-api-gateway-zuul
+        docker build -t hr-api-gateway-zuul:v1 .
+        docker tag hr-api-gateway-zuul:v1 walacetalesfs/hr-api-gateway-zuul:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/hr-api-gateway-zuul
